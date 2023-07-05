@@ -1,0 +1,35 @@
+#container>div{
+    /* width:50%; */
+/* border:5px solid brown; */
+    /* display: flex; */
+    /* 
+    justify-content: center; */ */
+    padding:10%;
+    margin:10%;
+    /* height: 3%; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+}
+#container{
+    width:40%;
+}
+#container>div>img{
+    width:50%;
+    margin: 20%;
+
+}
+h3{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+button{
+    font-weight: bold;
+    background-color: rgb(175, 240, 242);
+    border: 2px solid black;
+    border-radius: 10px;
+    padding:10px;
+    margin-left:100px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
