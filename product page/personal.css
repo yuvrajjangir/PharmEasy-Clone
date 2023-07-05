@@ -1,7 +1,7 @@
-{
-    font-family: "PT Sans", sans-serif;
+
+   *{font-family: "PT Sans", sans-serif;
     /* margin: 20px;; */
-}
+   }
 body{
     width:80%;
     margin: auto;
@@ -39,11 +39,7 @@ body{
     width:70%;
     height:150px;
 }
-#main{
-    display: flex;
-    justify-content: space-between;
-    padding:80px;
-}
+
 #container>div{
     /* border:4px solid black; */
     gap:30px;

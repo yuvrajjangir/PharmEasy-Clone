@@ -91,6 +91,7 @@ var newarray=JSON.parse(localStorage.getItem("nutriproduct"));
 
 function showdata(array){
  var maindiv=document.querySelector("#container");
+ maindiv.innerHTML="";
  console.log(array);
  console.log(typeof(array));
  array.forEach(function(element){
@@ -107,14 +108,90 @@ img.setAttribute("src",element.url);
 
     newdiv.append(img,name,sprice,price);
     maindiv.append(newdiv);
+    var link=document.createElement("a");
+    
 
     newdiv.addEventListener("click",function(){
         var showelement=[element];
         localStorage.setItem("showelement",JSON.stringify(showelement));
-        window.location.replace("./showelement.html");
+         window.location.replace("./showelement.html");
+
+        
+
     });
  });
 
  
 };
 showdata(newarray);
+
+var changbyname=document.querySelector("#byname");
+changbyname.addEventListener("change",function(){
+    var val=changbyname.value;
+    if(val==""){
+        showdata(newarray);
+    }
+    else if(val=="ascending") {
+
+        var asc=newarray.sort(function(x,y){
+            var namex=x.name.toUpperCase();
+            var namey=y.name.toUpperCase();
+            if(namex<namey){
+                return -1;
+            }
+            else if(namex>namey){
+                return 1;
+            }
+            return 0;
+
+        });
+        console.log(asc);
+        showdata(asc);
+    }
+    else if(val=="descending"){
+        var asc=newarray.sort(function(x,y){
+            var namex=x.name.toUpperCase();
+            var namey=y.name.toUpperCase();
+            if(namex<namey){
+                return 1;
+            }
+            else if(namex>namey){
+                return -1;
+            }
+            return 0;
+
+        });
+        console.log(asc);
+        showdata(asc);
+    }
+
+});
+
+//sort bt price
+var changebyprice=document.querySelector("#byprice");
+changebyprice.addEventListener("change",function(){
+    var val=changebyprice.value;
+    if(val==""){
+        showdata(newarray);
+    }
+    else if(val=="low to high"){
+        var lth=newarray.sort(function(x,y){
+            return x.price - y.price;
+
+        });
+        showdata(lth);
+    }
+    else if(val=="high to low"){
+        var lth=newarray.sort(function(x,y){
+            return  y.price - x.price;
+
+        });
+        showdata(lth);
+    }
+
+});
+
+//filter part
+
+// var arrfilter=document.querySelector
+
