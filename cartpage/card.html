@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Details</title>
+    <link rel="stylesheet" href="card.css" />
+  </head>
+  <body>
+    <div id="address">
+      <h2>Enter Card Details</h2>
+      <h4>Card Number</h4>
+      <input class="input" id="card-number" type="text" placeholder="Enter Card Number" />
+
+      <h4>Card Holder Name</h4>
+      <input class="input" id="card-holder" type="text" placeholder="Enter Card Holder Name" />
+
+      <h4>Expiry Date</h4>
+      <input class="input" id="expiry-date" type="date" placeholder="Enter Expiry Date" />
+
+      <h4>CVV</h4>
+      <input class="input" id="cvv" type="text" placeholder="Enter CVV" />
+
+      <br /><br />
+
+      <button id="submit-btn">Submit</button>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var submitButton = document.querySelector('#submit-btn');
+        submitButton.addEventListener('click', function () {
+          var cardNumber = document.querySelector('#card-number').value;
+          var cardHolder = document.querySelector('#card-holder').value;
+          var expiryDate = document.querySelector('#expiry-date').value;
+          var cvv = document.querySelector('#cvv').value;
+
+          if (!cardNumber || !cardHolder || !expiryDate || !cvv) {
+            alert('Please fill in all the fields');
+            return;
+          }
+
+          // Store the card details in localStorage or make an API request
+          // Example:
+          var cardDetails = {
+            cardNumber: cardNumber,
+            cardHolder: cardHolder,
+            expiryDate: expiryDate,
+            cvv: cvv
+          };
+          localStorage.setItem('cardDetails', JSON.stringify(cardDetails));
+
+          // Redirect to the OTP page
+          window.location.href = 'otp.html';
+        });
+      });
+    </script>
+  </body>
+</html>

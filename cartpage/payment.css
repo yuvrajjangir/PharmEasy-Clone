@@ -111,7 +111,7 @@ body {
      margin: 100px 0px 50px 30px;
     /* border:1px solid rgb(128, 160, 11) ; */
      display: flex;
-     padding:20px;
+    padding:20px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 #allinfo{
@@ -157,24 +157,77 @@ button,#qty {
     font-weight: 700;
     border-radius: 5px;
 }
- #Qcart {
-    position: fixed;
-    left: 65%;
-    width: 25%;
-    border: 1px solid rgb(170, 167, 170);
-    padding: 20px;
-    height: 300px;    
-    border-radius: 10px;
+#Qcart {
+  height: 600px;
+  font-size: 12px;
+  width: 15%;
 }
-
-#p,#q, #t {
-    font-size: 15px;
-    font-weight: 600;
-}
-
-#n{
+.order-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px white;
     margin-bottom: 10px;
-}
+  }
+  
+  .order-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .order-item .textdiv {
+    flex-grow: 1;
+  }
+  
+  .order-item h5 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .order-item p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+ .place-order-button {
+    background-color: #10847e;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 32%;
+  }
+  
+  .place-order-button:hover {
+    background-color: #0d504d;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .address-box,
+  #Qcart {
+    width: 70%;
+    margin: 20px;
+    padding: 20px;
+    border: 1px white;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .address-box,
+    #Qcart {
+      width: 90%;
+      color: white;
+    }
+  }
 
 @media only screen and (min-width:0px) and (max-width:320px)
      {
@@ -241,3 +294,10 @@ button,#qty {
             font-size: 12px;
         }     
      }
+     @media only screen and (max-width: 768px) {
+        #Qcart {
+          height: 250px;
+          font-size: 10px;
+          width: 20%;
+        }
+      }
