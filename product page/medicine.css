@@ -6,24 +6,91 @@ body{
     width:80%;
     margin: auto;
 }
-#belownavbar{
-  border:1px solid rgb(201, 199, 199);
-    width:80%;
-    height:35px;
-    display: flex;
-    margin:auto;
-    align-items: center;
-    justify-content: space-around;
-    /* gap: 10px; */
-    font-size: 20px;
-    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+#navbar{
+  width: 100%;
+  height: 123px;
+  background-color: #10847e;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display:flex;
+
 }
-#belownavbar a{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    color: black;
-    /* text-underline-offset: ; */
-    text-decoration: none;
+.fn{
+  font-family: Open Sans,sans-serif!important;
+  font-size: 13px;
+  font-weight: 300;
+  color:#10847e;
+}
+.mainLogo{
+  width: 165px;
+  height: 50px;
+  margin: 10px 0 10px 150px;
+  cursor: pointer;
+}
+.bar{
+  width: 70%;
+  height: 100px;
+  margin: 10px 0 10px 40px;
+}
+.search{
+  border-radius: 5px;
+  width: 75%;
+  height: 48px;
+  background-color: white;
+}
+.search > div{
+  /* border: 1px solid red; */
+  display:flex;
+  height: 45px;
+  align-items:center;
+  margin-left: 20px;
+  
+}
+#pin{
+  border: 0px;
+  margin: 0px;
+}
+.searchLogo{
+  width:50px;
+  height: 100%;
+  margin-left: 38px;
+  background-color: rgb(240, 230, 230);
+  border-radius: 5px;
+  
+  
+}
+.searchLogo > img{
+  width: 20px;
+  height: 20px;
+  margin: 5px 5px 5px 5px;
+  
+}
+input{
+  margin-left: 10px;
+  height: 80%;
+  width: 70%;
+  border: 0px;
+}
+#downBar{
+  display:flex;
+  margin-top: 28px;
+  margin-bottom: 50px;
+}
+#downBar>div>a{
+  font-size: 16px;
+  margin-left: 30px;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+}
+.left{
+  width: 50%;
+  margin-left: -30px;
+}
+.right{
+  width: 30%;
+  margin-left: 180px;
 }
 #offers{
     display: flex;
@@ -54,6 +121,9 @@ margin-bottom: 40px;
 }
 #offers>div h3>span{
     color:black
+}
+#all{
+  margin-top: 180px;
 }
   
 
