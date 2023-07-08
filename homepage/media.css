@@ -91,6 +91,31 @@
     }
   }
 @media (max-width: 767px) {
+  .product-list {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .product-list{
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .product-list {
+    width: 80%;
+    display: flex;
+    padding: 50px;
+  }
+}
+@media (max-width: 767px) {
     #box {
         #box {
             height: 50px;
