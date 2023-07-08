@@ -247,3 +247,55 @@ h4,p,#atype,h2 {
      margin-left: 120px;
  }
 }
+#delivery-form {
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    margin-top: 8%;
+    margin-left: 34%;
+  }
+  #delivery-form label[for="first-address"] {
+    font-family: "Arial", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 26%;
+  }
+  
+  #delivery-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-left: 20px;
+  }
+  
+  #delivery-form input[type="text"],
+  #delivery-form input[type="number"] {
+    width: 85%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 20px;
+  }
+  
+  #delivery-form button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #10847e;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 28%;
+    margin-top: 10px;
+  }
+  
+  #delivery-form button[type="submit"]:hover {
+    background-color: #0d504d;
+  }
+  
+  .alert {
+    color: red;
+    margin-top: 10px;
+  }
