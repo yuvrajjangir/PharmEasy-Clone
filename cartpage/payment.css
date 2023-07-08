@@ -200,7 +200,7 @@ button,#qty {
     font-size: 20px;
     cursor: pointer;
     margin-left: 36%;
-    margin-top: 33%;
+    margin-top: 47%;
   }
   
   .place-order-button:hover {
@@ -218,9 +218,9 @@ button,#qty {
     width: 70%;
     margin: 20px;
     padding: 20px;
-    border: 1px white;
+    border: 1px #f8f8f8;
     border-radius: 10px;
-    background-color: #f8f8f8;
+    background-color: white;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     margin-left: 35%;
 }
