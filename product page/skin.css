@@ -113,7 +113,7 @@ input{
     width:40%;
      height: 130px;
     /* align-self: center; */
-    margin-left: 18%;
+    margin-left: 2%;
     margin-top: 5%;
 }
 #main{
@@ -161,3 +161,87 @@ select{
         grid-template-columns: repeat(2,1fr);
     };
 };
+
+footer {
+    background-color: #bf3e3e;
+    padding: 20px 0;
+    margin-top: 20%;
+    }
+
+    #footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 20%;
+    }
+    .footer-column {
+    flex-basis: calc(20% - 20px);
+    margin-bottom: 20px;
+    }
+
+    .footer-column h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    }
+
+    .footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    }
+
+    .footer-column ul li {
+    margin-bottom: 5px;
+    }
+
+    .footer-column ul li a {
+    color: #333;
+    text-decoration: none;
+    }
+
+    #footer-social {
+    justify-content: right;
+}
+
+#footer-social a {
+display: inline-block;
+margin-right: 10px;
+}
+
+#footer-payment img {
+margin-right: 10px;
+width: 40px;
+}
+
+#footer-bottom {
+display: flex;
+justify-content: space-between;
+align-items: center;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+#footer-bottom p {
+font-size: 14px;
+color: rgb(101, 97, 97);
+margin: 0;
+}
+.healthconcern img{
+width: 200px;
+margin-left: 10px;
+}
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+.footer-column {
+flex-basis: calc(50% - 20px);
+}
+}
+
+@media screen and (max-width: 576px) {
+    .footer-column {
+      flex-basis:100%;
+    }
+   }
