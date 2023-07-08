@@ -9,87 +9,69 @@
     <link rel="stylesheet" href="payment.css">
     <style>
         body {
-  margin: 0;
-  padding: 0;
-}
-
-#container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-image: url('https://startuptrak.com/wp-content/uploads/2021/07/PharmEasy.png'); /* Replace with your image URL */
-  background-size: cover;
-  background-position: center;
-}
-
-.done {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  margin-bottom: 40px;
-}
-
-h3 {
-  margin: 0;
-  font-family: monospace;
-  font-size: 30px;
-  color: green;
-  text-align: center;
-}
-.modal {
-          display: none;
-          position: fixed;
-          z-index: 1;
-          left: 0;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          overflow: auto;
-          background-color: rgba(0, 0, 0, 0.4);
+            margin: 0;
+            padding: 0;
         }
 
-        .modal-content {
-          background-color: #64afab;
-          margin: 15% auto;
-          padding: 20px;
-          border: 1px solid #888;
-          width: 80%;
-          max-width: 400px;
-          text-align: center;
+        #container {
+            position: relative;
+            height: 100vh;
+            background-color: white;
         }
 
-        .modal h3 {
-          margin-top: 0;
-          color: white;
-          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-          font-size: 30px;
-          font-weight: bold;
+        .gif-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .gif-container img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .button-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .button-container button {
+            padding: 10px 20px;
+            background-color: #3e6ae1;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 535px;
+        }
+
+        .button-container button:hover {
+            background-color: #3e6ae1;
         }
     </style>
 </head>
 <body>
     <div id="container">
-        <div class="done">
-            <img src="https://quicksavaari.com/successgif.gif" alt="">
-        </div>
-    </div>
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <h3>Payment Successful. Thanks for purchasing...</h3>
+        <div class="gif-container">
+            <img src="https://i.redd.it/4yn181sqi7m21.png" alt="">
+            <div class="button-container">
+                <button onclick="redirectToHomepage()">Continue Shopping</button>
+            </div>
         </div>
     </div>
     <script>
-        // Display the modal on page load
-        window.addEventListener('load', function() {
-            var modal = document.getElementById('modal');
-            modal.style.display = 'block';
-            setTimeout(function() {
-                modal.style.display = 'none';
-                window.location.href = './index.html';
-            }, 3000); // Automatically redirect to homepage after 3 seconds
-        });
+        function redirectToHomepage() {
+            window.location.href = './index.html';
+        }
     </script>
 </body>
-</html
+</html>
