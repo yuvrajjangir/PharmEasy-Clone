@@ -1,4 +1,4 @@
-# ALCAZAR TRAVEL AGENCY
+# PharmEasy-Clone
 # <span style="color:red"> <i class="fa-solid fa-italic">Cloning of [PharmEasy](https://remarkable-narwhal-4ada63.netlify.app/) WEBSITE</i></span>
 
 # <span style="color:red"> Welcome Here!</span>
